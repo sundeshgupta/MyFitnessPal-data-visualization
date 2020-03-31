@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Create Collage</title>
+</head>
+<body>
+	<h1> MyFitnessPal Visualizer</h1>
+	Upload CSV file to visualize:
+	<form action="{{url_for('visualize')}}" method="post" enctype="multipart/form-data">
+		<input type='file' name='file'>
+		<input type='submit'>
+	</form>
+	<h5>{{error}} <h5>
+</body>
+</html>
